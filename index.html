@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product & Gallery Pages</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon/R.jpg" />
+  <style>
+    :root {
+      --primary: #4e54c8;
+      --secondary: #8f94fb;
+      --text: #ffffff;
+      --accent: #ff6b6b;
+      --bg: #1e1e2f;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+    }
+
+    .page {
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: var(--accent);
+      margin-bottom: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .product-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .card, .gallery-item {
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      overflow: hidden;
+      position: relative;
+      height: 250px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .card .content {
+      position: absolute;
+      bottom: 0;
+      background: rgba(30, 30, 47, 0.7);
+      width: 100%;
+      padding: 1rem;
+      color: var(--text);
+    }
+
+    .card .content h2 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+       color:   #b94545;
+    }
+
+    .card .content p {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+       color:   #b94545;
+    }
+
+    .card .content button {
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+       color:  rgba(30, 30, 47, 0.7);
+    }
+
+    nav {
+      background: var(--primary);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      color:  rgba(30, 30, 47, 0.7);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#product">Product Page</a>
+    <a href="#gallery">Gallery Page</a>
+  </nav>
+
+   <section id="product" class="page">
+    <h1>Our Products</h1>
+    <div class="grid product-grid">
+    <div class="card" style="background-image: url('assets/beauty1.jfif');">
+        <div class="content">
+          <h2>Product 1</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/beauty\ 2.jfif');">
+        <div class="content">
+          <h2>Product 2</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/beauty3.jfif');">
+        <div class="content">
+          <h2>Product 3</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/beauty\ 4.jfif');">
+        <div class="content">
+          <h2>Product 4</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/beauty5.jfif');">
+        <div class="content">
+          <h2>Product 5</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/decor2.jfif');">
+        <div class="content">
+          <h2>Product 6</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/decor3.jfif');">
+        <div class="content">
+          <h2>Product 7</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/decor4.jpg');">
+        <div class="content">
+          <h2>Product 8</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/decor5.jpg');">
+        <div class="content">
+          <h2>Product 9</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/dress2.jfif');">
+        <div class="content">
+          <h2>Product 10</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/dress3.jfif');">
+        <div class="content">
+          <h2>Product 11</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/dress4.jfif');">
+        <div class="content">
+          <h2>Product 12</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/dress5.jfif');">
+        <div class="content">
+          <h2>Product 13</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/shoe2.jfif');">
+        <div class="content">
+          <h2>Product 14</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <div class="card" style="background-image: url('assets/shoe4.jfif');">
+        <div class="content">
+          <h2>Product 15</h2>
+          <p>Short description of the product.</p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <nav>
+    <a href="#product">Product Page</a>
+    <a href="#gallery">Gallery Page</a>
+  </nav>
+
+    <section id="gallery" class="page">
+    <h1>Gallery</h1>
+    <div class="grid gallery-grid">
+      <div class="gallery-item" style="background-image: url('assets/9.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/5.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/6.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/7.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/8.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/1.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('assets/2.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/3.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/4.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/10.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/11.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/12.avif');"></div>
+      <div class="gallery-item" style="background-image: url('assets/13.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('assets/14.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('assets/15.jpg');"></div>
+      <div class="gallery-item" style="background-image: url('assets/16.jpeg');"></div>
+      <div class="gallery-item" style="background-image: url('assets/17.webp');"></div>
+      <div class="gallery-item" style="background-image: url('assets/18.jpeg');"></div>
+      
+    </div>
+  </section>
+</body>
+</html>
